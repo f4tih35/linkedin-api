@@ -360,7 +360,7 @@ class Linkedin(object):
         if keywords:
             params["keywords"] = keywords
 
-        data = self.search(params, **kwargs)
+        data = self.search(params, limit=30, **kwargs)
 
         results = []
         for item in data:
